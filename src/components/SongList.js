@@ -36,4 +36,4 @@ const mapStateToProps = (state) => { // This function name is a convention, but 
   return { songs: state.songs };
 }
 
-export default connect(mapStateToProps, { selectSong })(SongList);
+export default connect(mapStateToProps, { selectSong })(SongList); // Passing the selectSong action creator here tells Redux to call it with a dispatch function
