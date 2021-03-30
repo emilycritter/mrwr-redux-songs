@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-const SongList = () => {
-  return (
-    <div>
-      SongList
-    </div>
-  );
+class SongList extends Component {
+  render() {
+    return (
+      <div>
+        SongList
+      </div>
+    );
+  }
 }
 
-export default SongList;
+export default connect()(SongList);
